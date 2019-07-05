@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate MAPPING DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+
+
+
+<hibernate-mapping package="com.example.javacluborm.domain">
+	<class name="Study" table="studies" dynamic-insert="true" dynamic-update="true">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<many-to-one name="user" column="user_id" />
+		<many-to-one name="word" column="word_id" />
+		<many-to-one name="nextInterval" column="next_interval_id" />
+		<property name="lastStudyDate" column="last_study_date" type="timestamp" />
+		<property name="nextStudyDate" column="next_study_date" type="timestamp" />
+		<property name="achievement" column="achievement" type="integer" />
+		<property name="created" column="created" type="timestamp" />
+		<property name="priority" column="priority" type="integer" />
+	</class>
+
+
+
+
+
+
+
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate MAPPING DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+
+
+<!-- 前のコピー -->
+<hibernate-mapping package="com.example.javacluborm.domain">
+	<class name="Word" table="words">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name" column="name" type="string" />
+		<property name="detail" column="detail" type="string" />
+		<many-to-one name="subject" column="subject_id" />
+		<many-to-one name="user" column="register_user_id" />
+		<property name="created" column="created" type="timestamp" />
+		<property name="compulsory" column="compulsory" type="integer" />
+
+
+
+
+	</class>
+</hibernate-mapping>

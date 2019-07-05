@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate MAPPING DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.example.javacluborm.domain">
+
+	<class name="Interval" table="intervals">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+
+
+<property name="interval" column="interval" type="integer" />
+	</class>
+</hibernate-mapping>

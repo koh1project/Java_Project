@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate MAPPING DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.example.javacluborm.domain">
+
+	<class name="User" table="users" dynamic-insert="true" dynamic-update="true">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+
+
+		<property name="loginNameId" column="login_name_id" type="string" />
+		<many-to-one name="login" column="login_pass_id" />
+		<property name="name" column="name" type="string" />
+		<property name="kana" column="kana" type="string" />
+		<property name="mailAddress" column="mail_address" type="string" />
+		<many-to-one name="userType" column="user_type_id" />
+		<property name="created" column="created" type="timestamp" />
+
+	</class>
+</hibernate-mapping>

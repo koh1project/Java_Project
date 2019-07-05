@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+body{
+  font-size:2em;
+  line-height:25px;
+  margin:2px;
+  padding:2px;
+}
+
+
+.graph {
+ position: relative;
+ width: 300px;
+ border: 1px solid #207870;
+ padding: 2px;
+}
+
+.select{
+  widh:1.5em;
+  height:2em;
+  margin:2px;
+
+}
+
+.graph .bar {
+ display: block;
+ position: relative;
+ background: #409890;
+ text-align: center;
+ color: #f0ffff;
+ height: 2em;
+ line-height: 2em;
+}
+
+.graph .bar span {
+ position: absolute;
+ left: 1em;
+}
+
+h1.answer{
+  font-size:30px;
+  text-align:center;
+}
+
+.card{
+  background-color:#F0F8FF;
+  padding:2px;
+  margin:2px;
+/*   border:solid 0.5px; */
+/*   border */
+
+}
